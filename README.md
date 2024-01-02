@@ -1,1 +1,1 @@
-# crclart
+# `crclart` LaTeX class

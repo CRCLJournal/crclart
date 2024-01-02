@@ -1,0 +1,12 @@
+*.bbl
+*.blg
+*.aux
+*.fls
+*.log
+*.out
+*.fdb_latexmk
+*.pdf
+!article.pdf
+*.bcf 
+*.run.xml
+grimmelmann/
