@@ -97,10 +97,8 @@
 
 % New title
 \renewcommand{\maketitle}{%
-    \def
-    \@makefnmark {\rlap
-        {\@textsuperscript {\normalfont \@bsthanksheadpre
-                \tamark \@bsthanksheadpost }}}
+    \def \@makefnmark
+    {\@textsuperscript{\normalfont\tamark }}
     \long \def \@makefntext ##1{\makethanksmark ##1}
     \def\tamark{\@fnsymbol{\@thefnmark}}
     \thispagestyle{empty}
@@ -188,6 +186,7 @@
     \clearpage
     \bgroup\setlength{\parindent}{0pt}
     \begin{flushleft}
+        \addcontentsline{toc}{section}{Reply}
         \linespread{1}\selectfont\huge\textbf{\textcolor{header-grey}{A reply:} #1}\\
         \vspace{.25cm}
         \renewcommand{\baselinestretch}{.6}{\large \textbf{\@replier} \textbullet{} \@replierBio}
@@ -205,6 +204,7 @@
     \clearpage
     \bgroup\setlength{\parindent}{0pt}
     \begin{flushleft}
+        \addcontentsline{toc}{section}{Response}
         \linespread{1}\selectfont\huge\textbf{\textcolor{header-grey}{Author's reponse} #1}\\
         \vspace{.25cm}
         \renewcommand{\baselinestretch}{.6}{\large \textbf{\@authorNames}}
