@@ -116,7 +116,7 @@
     \@bsposttitle } \maketitlehookb \vskip 2em
     {\@bspreauthor \@author \@bspostauthor }
   \maketitlehookc {\@bspredate
-    \@bspostdate } \maketitlehookd \par \vskip 1.5em
+    \@bspostdate } \par \vskip 1.5em
   \begin{abstract}
     \@abstractText
     \par
@@ -125,6 +125,7 @@
     \par
     \par
     \large{\bfseries{Replier:}\ \normalfont{\@replier\ \textbullet{} \@replierBio.}}
+    \maketitlehookd
     \vspace{2em}%\newline
     \begin{center}
       \normalfont \emph{Journal of Cross-disciplinary Research in Computational Law}\\
