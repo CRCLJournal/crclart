@@ -67,7 +67,7 @@
 \renewcommand{\footrulewidth}{0.4pt}
 \fancyfoot[C]{} % Custom footer text
 \fancyfoot[R]{\thepage} % Custom footer text
-\setlength{\skip\footins}{.75cm} % Footnote spacing 
+\setlength{\skip\footins}{.75cm} % Footnote spacing
 \RequirePackage{xcolor}
 \definecolor{header-grey}{HTML}{777777} % Banner background colour
 \definecolor{light-grey}{HTML}{bbbbbb} % Lighter grey
@@ -83,10 +83,10 @@
 
 % Body text footnotes
 \addtolength{\footnotesep}{.5mm}
-{\makeatletter}	% Author affiliation footnotes	
+{\makeatletter}	% Author affiliation footnotes
 \def\@fnsymbol#1{\ensuremath{\ifcase#1\or *\or **\or
-            ***\or \dagger\or \ddagger\or \dagger\dagger
-        \or \ddagger\ddagger \else\@ctrerr\fi}}
+      ***\or \dagger\or \ddagger\or \dagger\dagger
+    \or \ddagger\ddagger \else\@ctrerr\fi}}
 {\makeatother}
 
 \fancyhead[L]{\@crclVolume}
@@ -97,55 +97,55 @@
 
 % New title
 \renewcommand{\maketitle}{%
-    \def \@makefnmark
-    {\@textsuperscript{\normalfont\tamark }}
-    \long \def \@makefntext ##1{\makethanksmark ##1}
-    \def\tamark{\@fnsymbol{\@thefnmark}}
-    \thispagestyle{empty}
-    \begin{textblock*}{\paperwidth}(0mm,0mm)
-        \textblockcolour{header-grey}
-        \vspace{6mm}
-        \href{https://journalcrcl.org}{\hspace{34mm}\includegraphics[width=.5\linewidth]{crcl-logo}}
-        \vspace{10mm}
-    \end{textblock*}
-    \null \vskip 2em\vspace *{\droptitle }
-    \maketitlehooka {\@bspretitle \linespread{.75}\centering\huge\bfseries\fontfamily{put}\selectfont{\@title}
-        \@bsposttitle } \maketitlehookb \vskip 2em
-        {\@bspreauthor \@author \@bspostauthor }
-    \maketitlehookc {\@bspredate
-        \@bspostdate } \maketitlehookd \par \vskip 1.5em
-    \begin{abstract}
-        \@abstractText
-        \par
-        \par
-        \bfseries{Keywords:}\normalfont\ \@keywords
-        \par
-        \par
-        \large{\bfseries{Replier:}\ \normalfont{\@replier\ \textbullet{} \@replierBio.}}
-        \vspace{2em}%\newline
-        \begin{center}
-            \normalfont \emph{Journal of Cross-disciplinary Research in Computational Law}\\
-            {\textcopyright} \the\year{} {\@authorNames}\\
-            DOI: \href{}{\@doiNumber{}}\\
-            Licensed under a \href{https://creativecommons.org/licenses/by-nc/4.0/}{Creative Commons BY-NC 4.0 license}\\
-            \href{https://journalcrcl.org}{www.journalcrcl.org}
-        \end{center}
-    \end{abstract}
-    \@thanks
-    \def\tamark{\@thefnmark{}}
-    \@bscontmark
-    \newgeometry{hmarginratio=1:1,top=32mm,bottom=32mm,columnsep=20pt,left=18mm}
-    \clearpage
-    \begin{refsection}
-        \begin{multicols}{2}}
+  \def \@makefnmark
+  {\@textsuperscript{\normalfont\tamark }}
+  \long \def \@makefntext ##1{\makethanksmark ##1}
+  \def\tamark{\@fnsymbol{\@thefnmark}}
+  \thispagestyle{empty}
+  \begin{textblock*}{\paperwidth}(0mm,0mm)
+    \textblockcolour{header-grey}
+    \vspace{6mm}
+    \href{https://journalcrcl.org}{\hspace{34mm}\includegraphics[width=.5\linewidth]{crcl-logo}}
+    \vspace{10mm}
+  \end{textblock*}
+  \null \vskip 2em\vspace *{\droptitle }
+  \maketitlehooka {\@bspretitle \linespread{.75}\centering\huge\bfseries\fontfamily{put}\selectfont{\@title}
+    \@bsposttitle } \maketitlehookb \vskip 2em
+    {\@bspreauthor \@author \@bspostauthor }
+  \maketitlehookc {\@bspredate
+    \@bspostdate } \maketitlehookd \par \vskip 1.5em
+  \begin{abstract}
+    \@abstractText
+    \par
+    \par
+    \bfseries{Keywords:}\normalfont\ \@keywords
+    \par
+    \par
+    \large{\bfseries{Replier:}\ \normalfont{\@replier\ \textbullet{} \@replierBio.}}
+    \vspace{2em}%\newline
+    \begin{center}
+      \normalfont \emph{Journal of Cross-disciplinary Research in Computational Law}\\
+      {\textcopyright} \the\year{} {\@authorNames}\\
+      DOI: \href{}{\@doiNumber{}}\\
+      Licensed under a \href{https://creativecommons.org/licenses/by-nc/4.0/}{Creative Commons BY-NC 4.0 license}\\
+      \href{https://journalcrcl.org}{www.journalcrcl.org}
+    \end{center}
+  \end{abstract}
+  \@thanks
+  \def\tamark{\@thefnmark{}}
+  \@bscontmark
+  \newgeometry{hmarginratio=1:1,top=32mm,bottom=32mm,columnsep=20pt,left=18mm}
+  \clearpage
+  \begin{refsection}
+    \begin{multicols}{2}}
 
-            \AtEndDocument{
-        \end{multicols}
-    \end{refsection}
+      \AtEndDocument{
+    \end{multicols}
+  \end{refsection}
 }
 
 
-% Metadata 
+% Metadata
 \date{} % Ignore this line!
 \makeatletter
 \def\replier#1{\gdef\@replier{#1}}
@@ -170,10 +170,10 @@
 \def\@keywords{\@latex@warning@no@line{No \noexpand\keywords given}}
 
 \AtBeginDocument{
-    \hypersetup{
-        pdftitle={\@title},
-        pdfauthor={\@authorNames},
-    }
+  \hypersetup{
+    pdftitle={\@title},
+    pdfauthor={\@authorNames},
+  }
 }
 \makeatother
 
@@ -181,38 +181,38 @@
 
 \makeatletter
 \newcommand{\reply}[1]{%
-    \end{multicols}
-    \end{refsection}
-    \clearpage
-    \bgroup\setlength{\parindent}{0pt}
-    \begin{flushleft}
-        \addcontentsline{toc}{section}{Reply}
-        \linespread{1}\selectfont\huge\textbf{\textcolor{header-grey}{A reply:} #1}\\
-        \vspace{.25cm}
-        \renewcommand{\baselinestretch}{.6}{\large \textbf{\@replier} \textbullet{} \@replierBio}
-    \end{flushleft}
-    \egroup
-    \textcolor{light-grey}{\hrule height .2cm} % Grey bar below title
-    \vspace{.5cm}
-    \begin{refsection}
-        \begin{multicols}{2}
-            }
-
-            \newcommand{\response}[1]{
-        \end{multicols}
-    \end{refsection}
-    \clearpage
-    \bgroup\setlength{\parindent}{0pt}
-    \begin{flushleft}
-        \addcontentsline{toc}{section}{Response}
-        \linespread{1}\selectfont\huge\textbf{\textcolor{header-grey}{Author's reponse} #1}\\
-        \vspace{.25cm}
-        \renewcommand{\baselinestretch}{.6}{\large \textbf{\@authorNames}}
-    \end{flushleft}
-    \egroup
-    \textcolor{light-grey}{\hrule height .2cm} % Grey bar below title
-    \vspace{.5cm}
-    \begin{refsection}
+  \end{multicols}
+  \end{refsection}
+  \clearpage
+  \bgroup\setlength{\parindent}{0pt}
+  \begin{flushleft}
+    \addcontentsline{toc}{section}{Reply}
+    \linespread{1}\selectfont\huge\textbf{\textcolor{header-grey}{A reply:} #1}\\
+    \vspace{.25cm}
+    \renewcommand{\baselinestretch}{.6}{\large \textbf{\@replier} \textbullet{} \@replierBio}
+  \end{flushleft}
+  \egroup
+  \textcolor{light-grey}{\hrule height .2cm} % Grey bar below title
+  \vspace{.5cm}
+  \begin{refsection}
     \begin{multicols}{2}
+      }
+
+      \newcommand{\response}[1]{
+    \end{multicols}
+  \end{refsection}
+  \clearpage
+  \bgroup\setlength{\parindent}{0pt}
+  \begin{flushleft}
+    \addcontentsline{toc}{section}{Response}
+    \linespread{1}\selectfont\huge\textbf{\textcolor{header-grey}{Author's reponse} #1}\\
+    \vspace{.25cm}
+    \renewcommand{\baselinestretch}{.6}{\large \textbf{\@authorNames}}
+  \end{flushleft}
+  \egroup
+  \textcolor{light-grey}{\hrule height .2cm} % Grey bar below title
+  \vspace{.5cm}
+  \begin{refsection}
+  \begin{multicols}{2}
 }
 \makeatother
