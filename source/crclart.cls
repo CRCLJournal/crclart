@@ -99,8 +99,11 @@
 \renewcommand{\maketitle}{%
   \def \@makefnmark
   {\@textsuperscript{\normalfont\tamark }}
-  \long \def \@makefntext ##1{\makethanksmark ##1}
   \def\tamark{\@fnsymbol{\@thefnmark}}
+  \long\def\thanksfootmark{
+    { \normalfont \thanksscript {\thanksfootpre \tamark \thanksfootpost}}
+  }
+  \long \def \@makefntext ##1{\makethanksmark ##1}
   \thispagestyle{empty}
   \begin{textblock*}{\paperwidth}(0mm,0mm)
     \textblockcolour{header-grey}
