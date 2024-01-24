@@ -7,7 +7,8 @@
 
 % Options
 \DeclareOption{law}{\PassOptionsToPackage{style=oscola}{biblatex}}
-\DeclareOption{cs}{\PassOptionsToPackage{style=acmauthoryear}{biblatex}}
+\DeclareOption{csauthoryear}{\PassOptionsToPackage{style=acmauthoryear}{biblatex}}
+\DeclareOption{csnumeric}{\PassOptionsToPackage{style=acmnumeric}{biblatex}}
 \ProcessOptions*
 
 
