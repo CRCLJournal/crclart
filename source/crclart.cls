@@ -189,9 +189,9 @@
   \end{multicols}
   \end{refsection}
   \clearpage
+  \pdfbookmark[0]{Reply}{sec:reply}
   \bgroup\setlength{\parindent}{0pt}
   \begin{flushleft}
-    \addcontentsline{toc}{section}{Reply}
     \linespread{1}\selectfont\huge\textbf{\textcolor{header-grey}{A reply:} #1}\\
     \vspace{.25cm}
     \renewcommand{\baselinestretch}{.6}{\large \textbf{\@replier} \textbullet{} \@replierBio}
@@ -207,9 +207,9 @@
     \end{multicols}
   \end{refsection}
   \clearpage
+  \pdfbookmark[0]{Response}{sec:response}
   \bgroup\setlength{\parindent}{0pt}
   \begin{flushleft}
-    \addcontentsline{toc}{section}{Response}
     \linespread{1}\selectfont\huge\textbf{\textcolor{header-grey}{Author's reponse} #1}\\
     \vspace{.25cm}
     \renewcommand{\baselinestretch}{.6}{\large \textbf{\@authorNames}}
