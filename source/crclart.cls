@@ -9,6 +9,7 @@
 \DeclareOption{law}{\PassOptionsToPackage{style=oscola}{biblatex}}
 \DeclareOption{csauthoryear}{\PassOptionsToPackage{style=acmauthoryear}{biblatex}}
 \DeclareOption{csnumeric}{\PassOptionsToPackage{style=acmnumeric}{biblatex}}
+\DeclareOption{noreply}{\newcommand{\noreply}{}}
 \ProcessOptions*
 
 
@@ -39,6 +40,7 @@
 \setlist[itemize]{noitemsep} % Make itemize lists more compact
 \RequirePackage[all]{nowidow}
 \RequirePackage[hidelinks]{hyperref}
+\RequirePackage{ifthen}
 
 
 % Headings
@@ -125,7 +127,9 @@
     \bfseries{Keywords:}\normalfont\ \@keywords
     \par
     \par
-    \large{\bfseries{Replier:}\ \normalfont{\@replier\ \textbullet{} \@replierBio.}}
+    \ifthenelse{\isundefined{\noreply}}{
+      \large{\bfseries{Replier:}\ \normalfont{\@replier\ \textbullet{} \@replierBio.}}
+    }{}
     \maketitlehookd
     \vspace{2em}%\newline
     \begin{center}
