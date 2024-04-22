@@ -225,3 +225,6 @@
   \begin{multicols}{2}
 }
 \makeatother
+
+% See https://tex.stackexchange.com/questions/655024/undefined-control-sequence-bibfont-bibliofont-footnotesize-when-using-biblat
+\providecommand{\bibliofont}{\footnotesize}
